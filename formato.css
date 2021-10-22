@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.inicio {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas:"head head  head"
+                        "main  main nav"
+                        "foot foot  foot";
+
+    grid-template-rows: 2fr 6fr 1.5fr;
+    grid-template-columns: 150px 1fr 0.1fr;
+}
+
+.inicio header {
+    grid-area: head;
+    
+}
+
+.inicio nav {
+    grid-area: nav;
+    background-color: black;
+}
+
+.inicio main {
+    grid-area: main;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.inicio footer {
+    grid-area: foot;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+/*-----HEADER-----*/
+
+.logoheader{
+    height: 8rem;
+    display: inline-flex;
+
+
+}
+
+.inicioHeader {
+    grid-area: head;
+    background-color: rgb(10, 1, 1);
+    background-image: url("img/skull15.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    
+}
+
+.inicioHeader li {
+    display: inline;
+    float:right;
+    padding-top: 40px;
+    padding: 10px;
+    
+}
+
+.menu {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color:black;
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: whitesmoke;
+    font-family: 'Orbitron', sans-serif;
+    display: float;
+    
+}
+
+/*-----NAV-----*/
+
+nav img{
+    padding-left: 3rem;
+}
+
+audio {
+padding: 10px;
+width: 280px;
+-webkit-transition:all 0.5s linear;
+-moz-transition:all 0.5s linear;
+-o-transition:all 0.5s linear;
+transition:all 0.5s linear;
+-moz-box-shadow: 2px 2px 4px 0px #e6fbfd;
+-webkit-box-shadow:  2px 2px 4px 0px #cdd5d6;
+box-shadow: 2px 2px 4px 0px #e5e5e6;
+-moz-border-radius:7px 7px 7px 7px ;
+-webkit-border-radius:7px 7px 7px 7px ;
+border-radius:7px 7px 7px 7px ;
+}
+
+.audionav{
+    display: block;
+    padding-right: 3REM;
+    padding-top: 11rem;
+}
+
